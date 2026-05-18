@@ -1,5 +1,6 @@
 streamlit>=1.32.0
-google-adk
 python-dotenv
 google-cloud-bigquery
-st-db-connection-profile
+db-dtypes
+pandas
+google-auth
