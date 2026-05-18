@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1u5GLfC_k0zbZN19BV8_RsCV45HMjMCmm
 """
 
-!pip install google-cloud-bigquery pandas google-genai
-
 """#**INICIO**
 
 Celda 2: Autenticación y configuración
