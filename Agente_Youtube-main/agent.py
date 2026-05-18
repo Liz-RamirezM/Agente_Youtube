@@ -12,9 +12,21 @@ Original file is located at
 Celda 2: Autenticación y configuración
 """
 
+from google.cloud import bigquery
+from google.oauth2 import service_account
+
 PROJECT_ID = "mineria-datos-493000"
 DATASET_ID = "youtube"
 TABLE_NAME = "fact_final"
+
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+)
+
+client = bigquery.Client(
+    credentials=credentials,
+    project=PROJECT_ID
+)
 CHANNEL_ID = "UC1Ma6Pwp5F6_W3QFzLt5EdQ"
 
 TABLE_ID = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_NAME}"
