@@ -11,7 +11,7 @@ Original file is located at
 
 Celda 2: Autenticación y configuración
 """
-
+import streamlit as st
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
